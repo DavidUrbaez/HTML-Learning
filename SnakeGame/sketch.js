@@ -9,6 +9,12 @@ function setup() {
     food = createVector(random(width), random(height));
 }
 
+function pickLocation() {
+    var cols = floot(width / scl);
+    var rows = floor(height / scl);
+    food = createVector(floor(random(cols)), floor(random(rows)));
+}
+
 function draw() {
     background(51);
     s.update();
