@@ -7,3 +7,10 @@ body {
 canvas {
     display: block;
 }
+
+.center {
+    background-color: #06061b;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
