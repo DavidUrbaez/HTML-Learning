@@ -25,7 +25,7 @@ function draw() {
         pickLocation();
     }
 
-    fill(255, 0, 100);
+    fill(random(255), random(255), random(255));
     rect(food.x, food.y, scl);
 
 }
