@@ -1,9 +1,10 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #06061b;
 }
 
 canvas {
-    display: block;
+    position: absolute;
+    top: 10%;
+    right: 50%;
 }
