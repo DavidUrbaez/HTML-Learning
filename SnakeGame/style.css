@@ -1,0 +1,10 @@
+html,
+body {
+    background-color: #06061b;
+}
+
+canvas {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
