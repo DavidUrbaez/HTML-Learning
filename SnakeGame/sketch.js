@@ -27,7 +27,8 @@ function draw() {
 
     fill(random(255), random(255), random(255));
     rect(food.x, food.y, scl);
-
+    fill(200);
+    text('Máximo Puntaje:' + str(s.score), 5, 5, 100);
 }
 
 
