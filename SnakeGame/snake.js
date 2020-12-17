@@ -1,5 +1,6 @@
 // Constructor
 function Snake() {
+    this.score = 0;
     this.x = 0;
     this.y = 0;
     this.xspeed = 1;
@@ -44,6 +45,9 @@ function Snake() {
                 this.tail = [];
 
             }
+        }
+        if (this.total > this.score) {
+            this.score = this.total;
         }
     }
     this.show = function() {
