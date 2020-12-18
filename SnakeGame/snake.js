@@ -1,5 +1,6 @@
 // Constructor
 function Snake() {
+    this.score = 0;
     this.x = 0;
     this.y = 0;
     this.xspeed = 1;
@@ -38,9 +39,15 @@ function Snake() {
             var pos = this.tail[i];
             var d = dist(this.x, this.y, pos.x, pos.y);
             if (d < 1) {
+                console.log('Perdiste!!!!');
+                console.log('Puntaje', this.total);
                 this.total = 0;
                 this.tail = [];
+
             }
+        }
+        if (this.total > this.score) {
+            this.score = this.total;
         }
     }
     this.show = function() {
